@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "ye ye pu"
+    "re gr pu"
+    "re pi pi";
+  gap: 20px;
+  margin: 20px;
+}
+
+div:nth-child(1) {
+  background: yellow;
+}
+#yellow {
+  grid-area: ye;
+}
+div:nth-child(2) {
+  background: purple;
+}
+#purple {
+  grid-area: pu;
+}
+div:nth-child(3) {
+  background: green;
+}
+#green {
+  grid-area: gr;
+}
+div:nth-child(4) {
+  background: red;
+}
+#red {
+  grid-area: re;
+}
+div:nth-child(5) {
+  background: orchid;
+}
+#pink {
+  grid-area: pi;
+}
